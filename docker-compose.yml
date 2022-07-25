@@ -3,6 +3,7 @@ services:
   jenkins:
     image: jenkins/jenkins:lts-jdk11
     user: 1000:997
+    restart: always
     ports:
       - 8080:8080
       - 50000:50000
